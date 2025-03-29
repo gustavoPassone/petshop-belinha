@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main {
+    & .produtos-categoria {
+        position: relative;
+        height: 670px;
+        background-image: url(../images/produtos/categoria/deal-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        
+        & .menu-categoria {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            position: relative;
+
+            & .title-categoria {
+                position: absolute;
+                margin-top: 400px;
+                background: transparent;
+            }
+
+            & .opcoes-categoria {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background: transparent;
+                position: absolute;
+                margin-top: 770px;
+
+                & img {
+                    width: 240px;
+                    height: 240px;
+                    background: transparent;
+                }
+
+                & .img-categoria{
+                    border-radius: 50%;
+                    align-items: center;
+                    width: 200px;
+                    height: 200px;
+                    margin: 0px 30px;
+                    & img {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+
+                & .opcao {
+                    display: flex;
+                    flex-direction: column;
+                    background: transparent;
+                    align-items: center;
+                    justify-content: center;
+
+                    & .opcao-content {
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+
+                        & h2 {
+                            font-family: "Winky Sans", sans-serif;
+                            color: white;
+                            font-size: 32px;
+                            font-weight: 500;
+                            background: transparent;
+                        }
+
+                        & .btn-categoria {
+                            position: relative;
+                            background: transparent;
+                            padding: 0px;
+                            border: none;
+                            cursor: pointer;
+                            transition: filter 250ms;
+                            text-decoration: none;
+                            
+                            & .borda-btn {
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              height: 100%;
+                              width: 100%;
+                              border-radius: 8px;
+                              background: linear-gradient(
+                                to right,
+                                hsl(50, 100%, 35%) 0%,  /* Tom inicial escuro */
+                                hsl(50, 100%, 40%) 8%,  /* Suavizando a transição */
+                                hsl(50, 100%, 30%) 92%, /* Mantendo um amarelo escuro equilibrado */
+                                hsl(50, 100%, 28%) 100% /* Final sem ficar muito profundo */
+                            );
+                            }
+                            
+                            & .texto-btn {
+                              display: block;
+                              position: relative;
+                              border-radius: 8px;
+                              background: rgb(238, 202, 0);
+                              padding: 10px 25px;
+                              color: white;
+                              font-weight: 600;
+                              letter-spacing: 1.5px;
+                              font-size: 1rem;
+                              transform: translateY(-4px);
+                              transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+                            }
+
+
+                            &:hover {
+                              filter: brightness(110%);
+                            }
+                          
+                            &:hover .texto-btn {
+                              transform: translateY(-6px);
+                              transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+                            }
+                          
+                            &:active .texto-btn {
+                              transform: translateY(-2px);
+                              transition: transform 34ms;
+                            }
+                          
+                            &:focus:not(:focus-visible) {
+                              outline: none;
+                            }
+                          }
+                          
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+}
