@@ -1,0 +1,10 @@
+@keyframes cabecalho {
+    0% {
+        transform: translateX(500px);
+    }
+}
+@keyframes logo {
+    0% {
+        transform: translateX(-500px);
+    }
+}

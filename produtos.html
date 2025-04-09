@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/produtos.css">
+    <link rel="stylesheet" href="src/css/keyframe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
     <title>Produtos - Pet Shop Belinha</title>
@@ -13,13 +14,24 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="src/images/logo-header.png" alt="logo menu"></a>
+        <a href="index.html">
+            <div class="logo">
+                <img src="src/images/favicon.png" alt="" class="logo-img">
+                <span class="laranja">B</span>
+                <span class="beje">e</span>
+                <span class="beje">l</span>
+                <span class="laranja">i</span>
+                <span class="laranja">n</span>
+                <span class="beje">h</span>
+                <span class="laranja">a</span>
+            </div>
+        </a>
         <div class="nav-menu">
-            <a href="index.html#sobre-nos">Sobre Nós</a>
+            <a href="#sobre-nos">Sobre Nós</a>
             <a href="produtos.html">Produtos</a>
-            <a href="index.html#servicos">Serviços</a>
-            <a href="index.html#contato">Contato</a>
-            <a href="index.html#cadastro">Cadastro</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <a href="#cadastro">Cadastro</a>
             <a href="lojas.html">Lojas</a>
         </div>
     </header>
@@ -29,7 +41,8 @@
         <section class="produtos-categoria" id="categoria">
             <div class="menu-categoria">
                 <div class="title-categoria">
-                    <h1 class="h1-patas-branco"><i class="fa-solid fa-paw"></i> Produtos por Categoria <i class="fa-solid fa-paw"></i></h1>
+                    <h1 class="h1-patas-branco"><i class="fa-solid fa-paw"></i> Produtos por Categoria <i
+                            class="fa-solid fa-paw"></i></h1>
                 </div>
                 <div class="opcoes-categoria">
                     <div class="opcao">
@@ -81,42 +94,45 @@
         </section>
 
         <section class="cachorro" id="cachorro">
-            <h1 class="h1-patas"><i class="fa-solid fa-paw"></i> Ração para Cachorro <i class="fa-solid fa-paw"></i></h1>
+            <h1 class="h1-patas"><i class="fa-solid fa-paw"></i> Ração para Cachorro <i class="fa-solid fa-paw"></i>
+            </h1>
             <div class="produtos">
                 <div class="produto">
-                    <div class="produto-content">
-                        <div class="produto-imagem">
-                            <img src="src/images/produtos/ra (1).png" alt="imagem produto">
+                    <a href="pagina-produtos.html?id=goldenFilhoteFrangoArroz">
+                        <div class="produto-content">
+                            <div class="produto-imagem">
+                                <img src="src/images/produtos/ra (1).png" alt="imagem produto">
+                            </div>
+                            <div class="produto-botao">
+                                <button type="button" class="btn-carrinho">Carrinho<span><i
+                                            class="fas fa-plus"></i></span></button>
+                                <button type="button" class="btn-comprar">Comprar <span><i
+                                            class="fas fa-shopping-cart"></i></span></button>
+                            </div>
                         </div>
-                        <div class="produto-botao">
-                            <button type="button" class="btn-carrinho">Carrinho<span><i
-                                        class="fas fa-plus"></i></span></button>
-                            <button type="button" class="btn-comprar">Comprar <span><i
-                                        class="fas fa-shopping-cart"></i></span></button>
-                        </div>
-                    </div>
-                    <div class="produto-infos">
-                        <div class="infos-top">
-                            <h2 class="produto-tipo">Ração</h2>
-                            <div class="rating">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
+                        <div class="produto-infos">
+                            <div class="infos-top">
+                                <h2 class="produto-tipo">Ração</h2>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+
+                            <p class="produto-nome">Ração Golden Filhote Sabor Frango e Arroz</p>
+                            <div class="produto-preco">
+                                <p class="preco">R$ 150,00</p>
+                                <p class="preco">R$ 90,30</p>
                             </div>
                         </div>
 
-                        <a href="#" class="produto-nome">Ração Golden Filhote Sabor Frango e Arroz</a>
-                        <div class="produto-preco">
-                            <p class="preco">R$ 150,00</p>
-                            <p class="preco">R$ 90,30</p>
+                        <div class="produto-desconto">
+                            <h2 class="h2-pd">25% off</h2>
                         </div>
-                    </div>
-
-                    <div class="produto-desconto">
-                        <h2 class="h2-pd">25% off</h2>
-                    </div>
+                    </a>
                 </div>
                 <div class="produto">
                     <div class="produto-content">
@@ -511,7 +527,8 @@
                             </div>
                         </div>
 
-                        <a href="#" class="produto-nome">Ração Whiskas para Gatos Sabor Carne com Delícias Crocantesa</a>
+                        <a href="#" class="produto-nome">Ração Whiskas para Gatos Sabor Carne com Delícias
+                            Crocantesa</a>
                         <div class="produto-preco">
                             <p class="preco">R$ 145,00</p>
                             <p class="preco">R$ 108,75</p>
@@ -973,7 +990,8 @@
         <section class="produtos-categoria">
             <div class="menu-categoria">
                 <div class="title-categoria">
-                    <h1 class="h1-patas-branco"><i class="fa-solid fa-paw"></i> Outros Produtos <i class="fa-solid fa-paw"></i></h1>
+                    <h1 class="h1-patas-branco"><i class="fa-solid fa-paw"></i> Outros Produtos <i
+                            class="fa-solid fa-paw"></i></h1>
                 </div>
                 <div class="opcoes-categoria">
                     <div class="opcao">
@@ -1118,13 +1136,13 @@
                     <div class="produto-infos">
                         <div class="infos-top">
                             <h2 class="produto-tipo">Brinquedos/h2>
-                            <div class="rating">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
                         </div>
 
                         <a href="#" class="produto-nome">Brinquedo Gatos Ratinho Vinil Colorido 6 cm</a>
@@ -1263,13 +1281,13 @@
                     <div class="produto-infos">
                         <div class="infos-top">
                             <h2 class="produto-tipo">Brinquedos/h2>
-                            <div class="rating">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="fas fa-star"></i></span>
-                                <span><i class="far fa-star"></i></span>
-                            </div>
+                                <div class="rating">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
                         </div>
 
                         <a href="#" class="produto-nome">Brinquedo Varinha Cat Fishing para Gato</a>
@@ -1774,14 +1792,14 @@
         </section>
 
         <a href="#categoria">
-        <div class="topo-whats">
-            <div class="seta-cima">
-                <i class="fa-solid fa-arrow-up"></i>
+            <div class="topo-whats">
+                <div class="seta-cima">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
             </div>
-            <div class="whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </div>
-        </div>
         </a>
     </main>
 
@@ -1789,25 +1807,25 @@
         <div class="footer-content">
             <div class="itens-footer">
                 <h1>Empresa</h1>
-                <a href="#about-us">Sobre Nós</a>
-                <a href="src/pages/produtos.html">Produtos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#contato">Contato</a>
-                <a href="src/pages/lojas.html">Nossas Lojas</a>
+                <a href="index.html#sobre-nos">Sobre Nós</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#contato">Contato</a>
+                <a href="lojas.html">Nossas Lojas</a>
             </div>
             <div class="itens-footer">
                 <h1>Produtos</h1>
-                <a href="#">Cachorro</a>
-                <a href="#">Gato</a>
-                <a href="#">Coelho</a>
-                <a href="#">Aves</a>
+                <a href="produtos.html#cachorro">Cachorro</a>
+                <a href="produtos.html#gato">Gato</a>
+                <a href="produtos.html#coelho">Coelho</a>
+                <a href="produtos.html#aves">Aves</a>
             </div>
             <div class="itens-footer">
                 <h1>Outros Produtos</h1>
-                <a href="#">Brinquedos</a>
-                <a href="#">Petiscos</a>
-                <a href="#">Casinhas</a>
-                <a href="#">Medicamentos</a>
+                <a href="produtos.html#brinquedos">Brinquedos</a>
+                <a href="produtos.html#petiscos">Petiscos</a>
+                <a href="produtos.html#casinhas">Casinhas</a>
+                <a href="produtos.html#medicamentos">Medicamentos</a>
             </div>
             <div class="social-media-footer">
                 <h1>Siga-Nos</h1>
@@ -1824,6 +1842,7 @@
         </div>
     </footer>
 
+    <script src="src/js/coletarProdutos.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 

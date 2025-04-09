@@ -1,5 +1,7 @@
 main {
     & .nossas-lojas {
+        margin-top: 200px;
+        
         & .lojas {
             display: flex;
             flex-wrap: wrap;

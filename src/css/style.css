@@ -9,6 +9,7 @@
     background-color: #f8f9fa;
     /* font-family: "Lexend", sans-serif; */
     font-family: "Quicksand", sans-serif;
+    text-decoration: none;
 }
 
 /* Cores */
@@ -45,8 +46,51 @@ header {
     left: 0;
     width: 100%;
 
+    & .logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        background: transparent;
+
+        & img {
+            width: 37px;
+            height: 37px;
+            object-fit: cover;
+        }
+
+        & span {
+            outline: none;
+            font-size: 36px;
+            background: transparent;
+            font-weight: bolder;
+        }
+
+        & .laranja {
+            color: orange;
+            outline: none;
+        }
+
+        & .beje {
+            color: rgb(252, 212, 137);
+        }
+    }
+
     & a {
         background: transparent;
+    }
+
+    /* Animação logo */
+    & .logo {
+        & .logo-img { animation: logo 2.1s;}
+        & span:nth-child(8) { animation: logo 1.3s; }
+        & span:nth-child(7) { animation: logo 1.4s; }
+        & span:nth-child(6) { animation: logo 1.5s; }
+        & span:nth-child(5) { animation: logo 1.6s; }
+        & span:nth-child(4) { animation: logo 1.7s; }
+        & span:nth-child(3) { animation: logo 1.8s; }
+        & span:nth-child(2) { animation: logo 1.9s; }
+        & span:nth-child(1) { animation: logo 2s; }
+
     }
     
     & img { 
@@ -72,6 +116,14 @@ header {
             background-color: #5334b3;
             border-radius: 8px;
         }
+
+        /* animação */
+        a:nth-child(1) { animation: cabecalho 0.8s; }
+        a:nth-child(2) { animation: cabecalho 1s; }
+        a:nth-child(3) { animation: cabecalho 1.2s; }
+        a:nth-child(4) { animation: cabecalho 1.4s; }
+        a:nth-child(5) { animation: cabecalho 1.6s; }
+        a:nth-child(6) { animation: cabecalho 1.8s; }
     }
 }
 
@@ -127,10 +179,53 @@ main {
         }
 
         & p {
-            padding: 20px 40px 0px 40px;
+            padding: 10px 40px 0px 40px;
             font-size: 88px;
             max-width: 800px;
             font-weight: 500;
+        }
+    }
+
+    @media screen and (max-width:1029px) {
+        & .home {
+            background-position: 65% center;
+            h1 {
+                padding: 220px 40px 0px 50px;
+            }
+
+            & p {
+                font-size: 50px;
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media screen and (max-width:697px) {
+        & .home {
+            
+            h1 {
+                
+                padding: 270px 40px 0px 50px;
+            }
+
+            & p {
+                font-size: 40px;
+                max-width: 450px;
+            }
+        }
+    }
+
+    @media screen and (max-width:489px) {
+        & .home {
+            background-position: 40% center;
+            h1 {
+                padding: 250px 40px 20px 50px;
+            }
+
+            & p {
+                font-size: 40px;
+                width: 100%;;
+            }
         }
     }
 
@@ -798,5 +893,16 @@ footer {
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+    }
+}
+
+@keyframes cabecalho {
+    0% {
+        transform: translateX(500px);
+    }
+}
+@keyframes logo {
+    0% {
+        transform: translateX(-500px);
     }
 }
