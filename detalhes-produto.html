@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/keyframe.css">
+    <link rel="stylesheet" href="src/css/pagina-produto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <title>Pet Shop Belinha - Tudo para seu Pet</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><div class="logo">
+            <img src="src/images/favicon.png" alt="" class="logo-img">
+            <span class="laranja">B</span>
+            <span class="beje">e</span>
+            <span class="beje">l</span>
+            <span class="laranja">i</span>
+            <span class="laranja">n</span>
+            <span class="beje">h</span>
+            <span class="laranja">a</span>
+        </div></a>
+        <div class="nav-menu">
+            <a href="index.html#sobre-nos">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="lojas.html">Lojas</a>
+        </div>
+    </header>
+<main>
+    <section class="produtos__content">
+        <div class="produtos--img">
+            <img src="" alt="" id="produtoImagem">
+        </div>
+
+        <div class="produtos--infos">
+            <p class="produtos--tipo" id="produtoTipo"></p>
+            <div class="produto--nome">
+                <p class="produto--nome-p" id="produtoNome"></p>
+                <!-- Classificação -->
+            </div>
+            <div class="produto--preco">
+                <p class="preco-1" id="produtoPrecoOriginal"></p>
+                <p>
+                    <span class="preco-2" id="produtoPrecoDesconto"></span>
+                    <span id="produtoDesconto"></span>
+                </p>
+                <p class="parcelamento" id="produtoParcelamento"></p>
+                <p class="modal-parcelamento">Ver os meios de pagamento</p>
+            </div>
+
+            <div class="produtos--entrega">
+                <div class="dia-entrega">
+                    <p class="dia-entrega-p"><span>Chegará grátis</span> entre quarta-quinta e quinta-feira </p>
+                    <p class="estoque">Estoque disponível</p>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" value="1">
+                </div>
+    
+                <div class="produtos--comprar">
+                    <button class="btn--comprar">Comprar agora</button>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                </div>
+    
+                <div class="devolucao">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        <span class="devolucao">Devolução grátis. Você tem 30 dias a partir da data de recebimento.</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="descrisao">
+        <h1>Descrisão</h1>
+        <p class="desc-p" id="produtoDescricao"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="itens-footer">
+            <h1>Empresa</h1>
+            <a href="index.html#sobre-nos">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="lojas.html">Nossas Lojas</a>
+        </div>
+        <div class="itens-footer">
+            <h1>Produtos</h1>
+            <a href="produtos.html#cachorro">Cachorro</a>
+            <a href="produtos.html#gato">Gato</a>
+            <a href="produtos.html#coelho">Coelho</a>
+            <a href="produtos.html#aves">Aves</a>
+        </div>
+        <div class="itens-footer">
+            <h1>Outros Produtos</h1>
+            <a href="produtos.html#brinquedos">Brinquedos</a>
+            <a href="produtos.html#petiscos">Petiscos</a>
+            <a href="produtos.html#casinhas">Casinhas</a>
+            <a href="produtos.html#medicamentos">Medicamentos</a>
+        </div>
+        <div class="social-media-footer">
+            <h1>Siga-Nos</h1>
+            <div class="icons-footer">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <h1>Desenvolvido Por GUSTAVO MARTINS PASSONE</h1>
+    </div>
+</footer>
+
+<script src="src/js/produtos.js"></script>
+<script src="src/js/detalhes-produto.js"></script>
+
+</body>
+</html>
